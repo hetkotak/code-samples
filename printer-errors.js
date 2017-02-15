@@ -28,3 +28,9 @@ function printerError(s) {
       }
       return(count+'/'+l); // returns the number of times character was not a-m / total characters
 }
+
+// One Liner Solution : 
+
+function printerError(s) {
+    return s.match(/[^a-m]/g).length + "/" + s.length;
+}
